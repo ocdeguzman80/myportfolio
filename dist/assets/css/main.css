@@ -74,6 +74,29 @@ img{
 .box-shadow {
 	box-shadow: 5px 5px 10px rgb(83, 119, 92);
 }
+
+.img-hover-trans {
+	img{
+	opacity: 1;
+	transition: .5s;
+	}
+	.card-hover-hide{
+		display:none;
+		transition: .5s;
+		line-height: 1.2;
+	}
+}
+.img-hover-trans:hover {
+	background-color: #003111;
+	color: #ffffff;
+	img{
+	opacity: 0.1;
+	}
+	.card-hover-hide{
+		display:block;
+	}
+}
+
 /*----------- LAYOUT -------*/
 .glass-plate {
 	background: transparent;
