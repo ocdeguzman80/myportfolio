@@ -1,0 +1,16 @@
+{
+  "name": "myportfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "gh-pages -d dist"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://ocdeguzman80.github.io/myportfolio",
+  "dependencies": {
+    "gh-pages": "^6.1.1"
+  }
+}

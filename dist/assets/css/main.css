@@ -1,0 +1,452 @@
+/*
+COLOR REFERENCES
+PALE GREEN	= #64845e
+GREEN		= #33a311
+DARK GREEN	= #3b5b35
+FONT COLOR	= #445440
+BG COLOR	= #7bad7e
+GRAY		= #3bad18			
+*/
+/*----------- GLOBAL -------*/
+
+html {
+	scroll-behavior: smooth;
+}
+body {
+	font-family : Helvetica, sans-serif;
+	font-size: 16px;
+	margin: 0;
+	padding:0;
+	color: #445440;
+	background: url('../img/echo-bg.png') center no-repeat;
+	background-size: cover;
+}
+
+hr {
+	margin:0;
+	padding:5px 0;
+}
+a{
+	text-decoration:none;
+	color: #64845e;
+	margin:0;
+}
+a:hover, a:active {
+	color: #3bad18;
+}
+ul {
+	list-style:none;
+	padding: 0 5px;
+}
+img{
+	max-width:100%;
+}
+.txt-sm{
+	font-size: 12px;
+}
+
+.hide{
+	display:none;
+}
+.center{
+	text-align: center;
+}
+.bg-theme-dark{
+	background-color: #01902E;
+}
+.bg-theme{
+	background-color: #d4dfd2;
+}
+.bg-theme1{
+	background-color: #DAE7D5;
+}
+#btn-menu-dropdown {
+	font-size: 14px;
+	font-weight:bold;
+}
+
+.sectionIcon {
+	width: 25%;
+}
+.underlined{
+	text-decoration: underline;
+}
+.box-shadow {
+	box-shadow: 5px 5px 10px rgb(83, 119, 92);
+}
+/*----------- LAYOUT -------*/
+.glass-plate {
+	background: transparent;
+	border:1px solid #81a07b;
+	/*background-color: #ededee;*/
+	box-shadow: 3px 3px 5px #3b5b35;
+	border-radius: 20px;
+	padding:20px;
+
+}
+.section-style1 {
+	min-height:400px;
+	padding: 40px 20px;
+	background-color: #ebf2ea;
+}
+.section-style2 {
+	padding: 40px 20px;
+	min-height:400px;
+}
+/*----------- HEADER -------*/
+#page-header-section{
+	min-height:300px;
+	margin-top: 60px;
+	background: url('../img/echo-wallpaper.png') center no-repeat fixed;
+	background-size: cover;
+	
+}
+a.nav-item {
+	text-decoration:none;
+	padding: 0 10px;
+}
+a.nav-link.dropdown-toggle::after{
+	content:none !important;
+}
+#mini-topnav {
+	font-size: 14px;
+	border-bottom: 1px solid #d2ddd5;
+	background-color: #01902E;
+	transition: 1s ease-in-out;
+}
+#mini-topnav a.nav-link{
+	padding:5px;
+	padding:5px;
+	color: #bee0bc;
+}
+#mini-topnav a:hover,
+#mini-topnav-right li.nav-item a:hover {
+	color: #f9f9f9;
+}
+#mini-topnav-left a:last-child{
+	font-size: 14px;
+}
+#mini-topnav a:hover:last-child{
+	font-weight:normal;
+}
+#mini-topnav-left .nav-link,
+#mini-topnav-right .nav-link {
+
+}
+
+
+/*---------------------------------------*/
+/*------ BRAND LOGO STYLING ------------*/
+
+#baseLogo img{
+	transition: 2s ease-in-out;
+}
+.imgLogoClass{
+	position:absolute;
+	top:1px;
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizeelegibility;
+}
+#baseLogo{
+	height:44px;
+}
+img#imgRotate{
+	height:38px;
+	top:4px;
+	margin-left:3px;
+	border-radius: 18px;
+	transition: 3s ease-in;
+	transition-delay: .2s;
+	animation-name: imgRotate;
+	animation-direction: alternate;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+}
+#letterP{
+	height:38px;
+	top:4px;
+	margin-left:3px;
+	transition: 1s ease-in-out;
+	/*transition-delay:.7s; */
+	animation-name: animateP;
+	animation-direction: normal;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+}
+/*-- logo effects --*/
+.navbar-brand:hover #imgRotate{
+	transform: rotate(360deg);
+	box-shadow: 0 0 20px #14350d;
+}
+.navbar-brand:hover #letterP{
+	/*transform: skew(10deg, 180deg);*/
+	transform: rotate(-720deg);
+	top: 12px;
+	margin-left: 12px;
+	height:20px;
+	opacity: .1;
+}
+@-webkit-keyframes animateP {
+    0%   { transform: skew(0deg, 0deg); opacity:0; }
+/*	25%  {background-color:yellow; left:200px; top:0px;}*/
+    50%  {}
+	75%  {}
+    100% {transform: skew(180deg, 180deg); opacity:1;}
+}
+@-webkit-keyframes imgRotate {
+	0%   { transform: rotate(0deg); box-shadow: 0 0 30px black;}
+	100% {transform: rotate(720deg); box-shadow: none;}
+}
+/*-------------------------------*/
+/*------ MAIN TOPNAV ------------*/
+.navbar-brand{
+}
+.brand-img-title{
+	position:absolute;
+	top:1px;
+	left:89px;
+	margin: 20px 0 0 1px;
+}
+#main-topnav.navbar{
+	min-height:48px;
+	background-color: #c6d6c2;
+	padding: 4px; 
+	box-shadow: 1px 1px 2px #64845e;
+}
+#navbarTogglerDemo02 {
+	
+}
+#main-topnav a.nav-link{
+	padding-bottom:0px;
+}
+.navbar-light .navbar-nav .active > .nav-link{
+	color: #3b5b35;
+	font-weight: bold;
+	border-bottom: 2px solid #3b5b35;
+}
+/*-- SEARCH ON MENU ---*/
+#menu-search input{
+	background-color: #ecf2ea;
+	border-radius: 20px 0 0 20px;
+}
+#menu-search button{
+	border-radius:  0 20px 20px 0;
+	border: 1px solid #b1b7bc;
+	padding: 3px 20px 3px 15px;
+	font-size: 20px;
+}
+#hero-section {
+	padding-top:50px;
+}
+
+#hero-section img{
+	
+}
+.hero-greeting,
+.hero-greeting h1 {
+	text-shadow: 2px 1px 1px #3b5b35;
+}
+#hero-content-div{
+	background: url('../img/bg5b.png') center no-repeat;
+	background-size: cover;
+	transition: 5s ease-in-out;
+	transition-duration: 1s;
+	animation-name: imgChanger;
+	animation-direction: alternate;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+}
+#hero-content-div:hover{
+	background: url('../img/bg3.png') center no-repeat;
+	background-size: cover;
+	opacity: .8
+}
+
+
+
+/*------ HERO SECTION ASIDE-----*/
+#social-icons {	
+}
+	/*---- SOCIAL ICONS STYLE ---------*/
+	.ul-social-icons { 
+		padding: 20px 0 40px 0;
+		display : flex;
+	}
+	.li-social-icons{
+		width:100%;
+		display:inline;
+		margin:0;
+		padding:0;
+		box-sizing:border-box;
+		text-align:center;
+		box-sizing: border-box;
+	}
+	.li-social-icons a:hover{ 
+		text-decoration:none;
+	}
+	.li-social-icons i{
+		width: 20%;
+		margin:0;
+		padding: 20px 0;
+		text-decoration:none;
+		text-shadow: 5px 5px 1px #3b5b35;
+		font-size:35px;
+		color: #8ddd73;
+		transition: .3s ease-in-out;
+	}
+	.li-social-icons i:hover {
+		text-shadow:3px 3px 2px white;
+		transform: rotate(-10deg);
+		-webkit-transform: rotate(-10deg);
+	}
+	i.fa-facebook-official:hover {
+			color: #4267B2;
+		}
+	i.fa-twitter:hover {
+			color: #1DA1F2;
+		}
+	i.fa-instagram:hover {
+			color: #D22F7A;
+		}
+	i.fa-google-plus-official:hover {
+			color: #DB4539;
+		}
+	i.fa-pinterest:hover {
+			color: #BB081B;
+		}
+	/*---------------------*/
+
+/*----------- OPT IN SECTION -------*/
+#opt-in-section {
+	background: #3b5b35;
+	border-top:5px solid #64845e;
+	border-bottom:5px solid #64845e;
+	margin:-16px 0 0 0;
+	padding: 10px 20px;
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizeelegibility;
+	
+}
+#optin-subscribe-btn{
+	
+}
+
+/*----------- BOOST YOUR INCOME SECTION -------*/
+.section-header{
+	text-align: center;
+}
+
+/*----------- WHO BENEFITS SECTION -------*/
+
+
+/*----------- COURSE FEATURES SECTION -------*/
+
+
+/*----------- PROJECT FEATURES SECTION -------*/
+
+/*----------- VIDEO FEATURETTE SECTION -------*/
+
+
+/*----------- INSTRUCTOR SECTION -------*/
+
+
+/*----------- TESTIMONIALS SECTION -------*/
+
+
+/*----------- SIGN UP SECTION -------*/
+
+
+/*----------- FOOTER SECTION -------*/
+
+
+/*----------- MODAL SECTION -------*/
+
+
+/*------------------------------------------------------------------*/
+/*---------------------- MEDIA SCREENS -----------------------------*/
+/*------------------------------------------------------------------*/
+
+@media screen and ( max-width: 992px ){
+.brand-img-title{
+	display:none;
+}
+}
+
+@media screen and ( max-width: 768px ){
+	body{
+		font-size: 14px;
+	}
+	p.lead {
+		font-size: 16px;
+	}
+	h1.display-4{
+		font-size:35px;
+	}
+	h1{
+		font-size:30px
+	}
+	.btn {
+		font-size: 16px;
+		min-width:90px;
+	}	
+	#mini-topnav-left span,
+	#mini-topnav-right span{
+		display:none;
+	}
+	
+	/*-- SEARCH ON MENU ---*/
+	#menu-search form{
+		width:100%;
+		margin:0 auto;
+		display: flex;
+		flex-wrap: nowrap;
+	}
+	#menu-search input{
+		width:80%;
+	}
+	#menu-search button{
+		width: 20%;
+	}
+	/*
+	.aside-courses a.list-group-item{
+		font-size: 14px;
+	}	*/
+}
+
+
+	
+}
+@media screen and ( max-width: 400px ){
+	h1, h1.display-4{
+		font-size:25px;
+		font-weight:bold;
+	}
+	p.lead {
+		font-size:12px;
+	}
+	.btn {
+		font-size: 16px;
+		min-width:90px;
+	}
+	h3 {
+		font-size:14px;
+		font-weight:bold;
+	}
+	.sm-hide{
+		display:none;
+	}
+	body {
+		font-size:14px;
+	}
+	.li-social-icons i,
+	.li-social-icons{
+		font-size:25px;
+		margin:0 auto;	
+	}
+}
+
+
+
+
+
+
