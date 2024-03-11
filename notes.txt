@@ -1,4 +1,5 @@
-
+go to Brad Traversy Tutorial video here for reference:
+https://www.youtube.com/watch?v=SKXkC4SqtRk&t=331s&ab_channel=TraversyMedia
 _____________________________________________________
 To push an existing repository from the command line
 -----------------------------------------------------
