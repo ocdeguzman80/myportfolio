@@ -763,6 +763,7 @@
 		<span class="copyright text-light">Copyright © &nbsp;   
 			<img class="" src="assets/img/ohmportal.png" alt="" style="width: 40px;"> &nbsp; OhmPortal 2017
 		</span>
+		<span class="pull-right"><a href="#" class="btn btn-success"><i class="fa fa-chevron-up"></i></a></span>
 	</div>
 </div>
 </footer>
@@ -791,16 +792,21 @@
 			<div class="form-group">
 			  <input type="email" class="form-control" placeholder="username@example.com" required>
 			</div>
-		<p class="small px-3 m-0">By providing your email, you consent to receiving occasional promotional emails &amp; newsletters.<br><b>No Spam. Just good stuff!</b> We respect your privacy &amp; you may unsubscribe anytime.</p>
+		<p class="txt-sm px-3 m-0">By providing your email, you consent to receiving occasional promotional emails &amp; newsletters.<br><b>No Spam. Just good stuff!</b> We respect your privacy &amp; you may unsubscribe anytime.</p>
       </div>
       <div class="modal-footer">
 			<div class="col">
 				<button type="button" class="btn btn-outline-danger form-control" data-dismiss="modal">Cancel</button>
 			</div>
 			<div class="col">
-				<button type="submit" name="submit-subscribe" class="btn btn-outline-success form-control">Submit</button>
+				<button type="submit" name="submit-subscribe" class="btn btn-outline-success form-control" onclick="myFunction()">Submit</button>
 			</div>
 		</form>
+		<script>
+			function myFunction() {
+			  alert("Great!\nDon't worry, this is just a demo. None of the details submitted were saved.");
+			}
+		</script>
       </div><!--- modal-footer -->
     </div>
   </div>
@@ -813,6 +819,10 @@
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
 <script src="assets/js/main.js"></script>
+
+<!-- For Sending Email -->
+<script src="https://smtpjs.com/v3/smtp.js">
+</script>
 
 </body>
 </html>

@@ -44,7 +44,9 @@ img{
 .txt-sm{
 	font-size: 12px;
 }
-
+.txt-lg{
+	font-size: 30px;
+}
 .hide{
 	display:none;
 }
@@ -85,9 +87,10 @@ img{
 		transition: .5s;
 		line-height: 1.2;
 	}
+	overflow-y: auto;
 }
 .img-hover-trans:hover {
-	background-color: #003111;
+	background-color: #356648;
 	color: #ffffff;
 	img{
 	opacity: 0.1;
@@ -96,6 +99,29 @@ img{
 		display:block;
 	}
 }
+
+/********  */
+/* width */
+::-webkit-scrollbar {
+	width: 15px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+	box-shadow: inset 0 0 5px grey; 
+	border-radius: 10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+	background: #84fcba; 
+	border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+	background: #67cf96; 
+  }
 
 /*----------- LAYOUT -------*/
 .glass-plate {
