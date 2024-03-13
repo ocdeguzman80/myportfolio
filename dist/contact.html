@@ -146,33 +146,120 @@
 <div class="mt-5 py-4" alt="spacer"></div>    
 <div class="container">
     <div class="row">
-        <h1 class="display-4 mx-auto">Services</h1>
+        <h1 class="display-4 mx-auto">Contact</h1>
     </div>
 </div>
 
 <!-- SERVICES SECTION -->
 <section id="section-personal" class="bg-theme1 h-100 py-4">
 <div class="container">
-    <div class="row py-5">
+    <div class="row">
         <div class="col-12 mx-auto py-3">
-            <h3 class="underlined">Web Design & Development</h3>
-        </div>
-
-              
+            <h3 class="underlined">My Office Location</h3>
+        </div>              
+    </div>
+    <div class="row">
+      <!-- Map Column -->
+      <div class="col-md-7 mb-2">
+        <!-- Embedded Google Map -->
+        <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d15394.651470661385!2d120.56244685000001!3d15.28617025!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTXCsDE3JzE1LjciTiAxMjDCsDMzJzU5LjYiRQ!5e0!3m2!1sen!2sph!4v1710341450528!5m2!1sen!2sph" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+      <!-- Contact Details Column -->
+      <div class="col-md-5 mb-4">
+        <h3>Contact Details</h3>
+        <p>
+          Block 11, Lot 8, Metro Bamban Subdivision, Brgy. Anupul<br>
+          Bamban, Tarlac 2317 Philippines<br>
+        </p>
+        <p>
+          <abbr title="Phone">Phone</abbr>: (+63) 949-981-2960
+        </p>
+        <p>
+          <abbr title="Email">Email</abbr>: <br>
+          <a href="mailto:omar@odigimarketing.com" class="mx-4">omar@odigimarketing.com <i class="fa fa-hand-o-left"></i></a><br>
+          <a href="mailto:ocdeguzman.80@gmail.com" class="mx-4">ocdeguzman.80@gmail.com <i class="fa fa-hand-o-left"></i></a>
+        </p>
+        <p>
+          <abbr title="Hours">Hours</abbr>: <br>
+          Monday - Friday: 4:00 PM to 4:00 AM  (UTC +08:00) <br>
+        </p>
+        <p><a href="" class="btn btn-outline-success btn-block">Schedule an Appointment <i class="fa fa-hand-o-left"></i></a></p>
+      </div>
     </div>
 </div>
 </section>
 
-<!-- PORTFOLIO SECTION -->
-<section id="section-personal" class="bg-theme1 h-100 py-4">
+<!-- Alternative Contact SECTION -->
+<section id="section-alt-contact" class="bg-theme h-100 py-5">
 <div class="container">
-    <div class="row py-5">
-        <div class="col-12 mx-auto py-3">
-            <h3 class="underlined">Website Projects</h3>
+    <div class="row">
+        <div class="col-12 mx-auto">
+            <h3 class="underlined">Let's Connect!</h3>
+        </div>              
+    </div>
+    <div class="row mx-auto text-center w-50">
+      <h5 class="w-100">My Social Media Accounts</h5>
+      <div class="col">
+        <a href="https://www.facebook.com/ohm.digitalmarketing/" class="txt-lg"><i class="fa fa-facebook-square text-primary" title="View my facebook page."></i></a>
+      </div>
+      <div class="col">
+        <a href="https://www.linkedin.com/in/omardeguzman-digitalmarketing/" class="txt-lg"><i class="fa fa-linkedin-square text-primary" title="View my LinkedIn Profile"></i></a>
+      </div>
+      <div class="col">
+        <a href="https://www.instagram.com/ocdeguzman/" class="txt-lg"><i class="fa fa-instagram text-danger" title="View my Instagram"></i></a>                
+      </div>              
+      <div class="col">
+        <a href="https://www.twitter.com/ocdeguzman/" class="txt-lg"><i class="fa fa-twitter text-info" title="View my Instagram"></i></a>                
+      </div>              
+      <div class="col">
+        <a href="https://www.pinterest.com/ocdeguzman_80/" class="txt-lg"><i class="fa fa-pinterest text-danger" title="View my Instagram"></i></a>                
+      </div>              
+  </div> 
+</div>
+</section>
+
+<section id="section-form" class="bg-theme h-100 py-5">
+<div class="container">
+  <!-- Contact Form -->
+      <!-- In order to set the email address and subject line for the contact form go to the bin/contact_me.php file. -->
+      <div class="row">
+        <div class="col-lg-8 p-5 mb-4 mx-auto border border-info rounded">
+          <h3>Send us a Message</h3>
+          <p class="text-danger mb-4">Sorry, this contact form is disabled. Try reaching out the away at above.</p>
+          <form name="sentMessage" id="contactForm" novalidate>
+            <div class="control-group form-group">
+              <div class="controls">
+                <label>Full Name:</label>
+                <input type="text" class="form-control" id="name" required data-validation-required-message="Please enter your name.">
+                <p class="help-block"></p>
+              </div>
+            </div>
+            <div class="control-group form-group">
+              <div class="controls">
+                <label>Phone Number:</label>
+                <input type="tel" class="form-control" id="phone" required data-validation-required-message="Please enter your phone number.">
+              </div>
+            </div>
+            <div class="control-group form-group">
+              <div class="controls">
+                <label>Email Address:</label>
+                <input type="email" class="form-control" id="email" required data-validation-required-message="Please enter your email address.">
+              </div>
+            </div>
+            <div class="control-group form-group">
+              <div class="controls">
+                <label>Message:</label>
+                <textarea rows="10" cols="100" class="form-control" id="message" required data-validation-required-message="Please enter your message" maxlength="999" style="resize:none"></textarea>
+              </div>
+            </div>
+            <div id="success"></div>
+            <!-- For success/fail messages -->
+            <button type="submit" class="btn btn-primary" id="sendMessageButton">Send Message</button>
+          </form>
         </div>
 
-              
-    </div>
+      </div>
+      <!-- /.row -->
 </div>
 </section>
 
@@ -183,13 +270,14 @@
 		<div class="col-3">
 			<h3 class="text-warning">Quick Links</h3>
 			<ul>
-				<li><a href="index.html" target="_blank" rel="noopener noreferrer" class="text-light">Home</a></li>
-				<li><a href="#section-about" target="_blank" rel="noopener noreferrer"class="text-light">About</a></li>
-				<li><a href="#section-portfolio" target="_blank" rel="noopener noreferrer"class="text-light">Portfolio</a></li>
-				<li><a href="#section-services" target="_blank" rel="noopener noreferrer"class="text-light">Services</a></li>
-				<li><a href="#section-blog" target="_blank" rel="noopener noreferrer"class="text-light">Blog</a></li>
-				<li><a href="privacy-policy.html" target="_blank" rel="noopener noreferrer"class="text-light">Privacy Policy</a></li>
-				<li><a href="terms-of-use.html" target="_blank" rel="noopener noreferrer"class="text-light">Terms of Use</a></li>
+				<li><a href="index.html" target="" rel="noopener noreferrer" class="text-light">Home</a></li>
+				<li><a href="#section-services" target="" rel="noopener noreferrer"class="text-light">Services</a></li>
+				<li><a href="about.html" target="" rel="noopener noreferrer"class="text-light">About</a></li>
+				<li><a href="portfolio.html" target="" rel="noopener noreferrer"class="text-light">Portfolio</a></li>
+				<li><a href="#section-blog" target="" rel="noopener noreferrer"class="text-light">Blog</a></li>
+				<li><a href="contact.html" target="" rel="noopener noreferrer"class="text-light">Contact</a></li>
+				<li><a href="privacy-policy.html" target="" rel="noopener noreferrer"class="text-light">Privacy Policy</a></li>
+				<li><a href="terms-of-use.html" target="" rel="noopener noreferrer"class="text-light">Terms of Use</a></li>
 			</ul>
 		</div>
 		<div class="col-9">
